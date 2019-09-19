@@ -4,8 +4,13 @@ try {
         weekday: 'long',
         year: 'numeric',
         month: 'long',
-        day: 'numeric'
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        timeZoneName: 'short'
     };
+
     let dateUpdated = updated.toLocaleDateString("en-US", options);
     document.getElementById("lastUpdated").textContent = dateUpdated;
 } catch (e) {
