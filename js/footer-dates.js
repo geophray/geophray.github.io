@@ -1,9 +1,8 @@
 try {
     let updated = new Date(document.lastModified);
     let options = {
-        weekday: 'long',
         year: 'numeric',
-        month: 'long',
+        month: 'numeric',
         day: 'numeric',
         hour: 'numeric',
         minute: 'numeric',

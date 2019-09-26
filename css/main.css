@@ -29,7 +29,7 @@ h4,
 h5,
 h6 {
     font-family: 'Press Start 2P', cursive;
-    color: #5F3046;
+    color: #393841;
 }
 
 h1 {
@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-    border-bottom: gray;
+    border-bottom: #987344;
     border-style: solid;
     border-width: 0 0 1px 0;
 }

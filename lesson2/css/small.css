@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&7cPress+Start+2P&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header#main, footer {
+    text-align: center;
+    background-color: #bada55;
+    color: #393841;
+    padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    padding: 10px;
+}
+
+article {
+    background-color: #f6f4f4;
+    border: 0.5px solid #86a8ac;
+}
+
+article header {
+    background-color: #393841;
+    color: #f6f4f4
+}
+
+article,
+article header {
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+article header
+ {
+    padding: 10px;
+}
+article p,
+article div{
+    margin: 20px 10px;
+}
+
+.screenshot {
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.screenshot img {
+    width: 100%;
+}
