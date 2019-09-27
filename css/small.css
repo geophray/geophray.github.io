@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab:700&display=swap');
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 header,
@@ -15,7 +17,7 @@ footer {
     border-radius: 15px;
 }
 
-header#page_header{
+header#page_header {
     padding-top: 15vw;
     border-top-right-radius: 50vw;
     border-top-left-radius: 50vw;
@@ -39,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto Slab', serif;
     color: #393841;
 }
 

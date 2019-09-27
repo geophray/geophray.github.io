@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab:700&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto Slab', serif;
 }
 
 main {
