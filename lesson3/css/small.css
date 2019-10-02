@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&7cRoboto&display=swap');
+
+/* COLORS
+Light Shades:       #F0E8E7 (Soft Peach)
+Light Accent:       #4BA0CA (Shakespeare)
+Main Brand Color:   #0A1085 (Deep Koamaru)
+Dark Accent:        #6A6482 (Dolphin)
+Dark Shades:        #111215 (Woodsmoke)
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    background-color: #0A1085;
+    text-align: center;
+    padding: 5px;
+}
+
+header a {
+
+    color: #F0E8E7;
+    text-decoration: none;
+}
+
+header p {
+    color: #4BA0CA;
+    font-style: italic;
+}
+
+header div.hcwrapper,
+nav ul,
+main,
+footer div {
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #111215;
+    color: #f0E8E7;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li,
+nav ul li a {
+    text-decoration: none;
+    color: #F0E8E7;
+}
+
+nav ul li a {
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #4BA0CA;
+    color: #111215;
+}
+
+.active {
+    color: #4BA0CA;
+}
+
+footer{
+    background-color: #111215;
+    color: #F0E8E7;
+    text-align: center;
+    padding: 2rem;
+}
+footer a{
+    color: #F0E8E7;
+}
