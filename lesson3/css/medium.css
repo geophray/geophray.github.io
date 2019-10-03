@@ -15,5 +15,15 @@
     nav ul li {
         flex: 1 1 100%;
     }
+
+    #color-palette {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .color-block {
+        height: 50vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+    }
     
 }

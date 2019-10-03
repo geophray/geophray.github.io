@@ -78,12 +78,51 @@ nav a:hover {
     color: #4BA0CA;
 }
 
-footer{
+footer {
     background-color: #111215;
     color: #F0E8E7;
     text-align: center;
     padding: 2rem;
+    margin-top: 25px;
 }
-footer a{
+
+footer a {
+    color: #F0E8E7;
+}
+
+#color-palette {
+    display: grid;
+}
+
+.color-block {
+    height: 10vh;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#light-shades .color-block {
+    background-color: #F0E8E7;
+    color: #111215;
+}
+
+#light-accent .color-block {
+    background-color: #4BA0CA;
+    color: #111215;
+}
+
+#main-color .color-block {
+    background-color: #0A1085;
+    color: #F0E8E7;
+}
+
+#dark-accent .color-block {
+    background-color: #6A6482;
+    color: #F0E8E7;
+}
+
+#dark-shades .color-block {
+    background-color: #111215;
     color: #F0E8E7;
 }
