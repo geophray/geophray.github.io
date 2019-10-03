@@ -3,6 +3,10 @@
         margin: 0 15px;
     }
 
+    header p#site-title a {
+        font-size: 2.2em;
+    }
+
     .hcwrapper {
         display: flex;
         justify-content: center;
@@ -19,11 +23,12 @@
     #color-palette {
         grid-template-columns: repeat(5, 1fr);
     }
+
     .color-block {
         height: 50vh;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-end;
     }
-    
+
 }
