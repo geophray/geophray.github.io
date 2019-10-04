@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald&7cRoboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&7cOswald&7cRoboto&display=swap');
 
 /* COLORS
 Light Shades:       #F0E8E7 (Soft Peach)
@@ -47,9 +47,10 @@ header p#site-title a,
 }
 
 header p#site-slogan,
-#site-subheader .object-item {
+#site-subheader .object-item, div#table-header {
+    font-family: 'Caveat', cursive;
     color: #4BA0CA;
-    font-style: italic;
+    font-size: 1.3em;
 }
 
 #site-header .object-item,
@@ -106,6 +107,58 @@ nav a:hover,
 
 main {
     padding: 1.5em;
+}
+
+#table-header {
+    display: none;
+}
+
+#typography div {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.font-selection {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
+    box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
+}
+
+.font-selection span {
+    margin-bottom: 5px;
+}
+
+.object-item {
+    height: 75px;
+    width: 100%;
+    border-bottom: 0.25px solid #6A6482;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-font:before {
+    content: 'Font Family: ';
+}
+
+.text-size:before {
+    content: 'Font Size: ';
+}
+
+.text-color:before {
+    content: 'Font Color: ';
+}
+
+.text-font,
+.text-size,
+.text-color {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 footer {
