@@ -1,0 +1,8 @@
+/* Styles applied to large desktop screens. */
+@media only screen and (min-width: 870px) {
+
+    /************* Target Audience Page Styles */
+    #personas-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}

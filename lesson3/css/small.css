@@ -8,8 +8,13 @@ Dark Accent:        #6A6482 (Dolphin)
 Dark Shades:        #111215 (Woodsmoke)
 */
 
+/************* Default Typography Styles */
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #4BA0CA;
 }
 
 h1,
@@ -29,6 +34,22 @@ h2 {
     color: #6A6482;
 }
 
+header p#site-title a,
+#site-header .object-item {
+    color: #F0E8E7;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+}
+
+header p#site-slogan,
+#site-subheader .object-item,
+div#table-header {
+    font-family: 'Caveat', cursive;
+    color: #4BA0CA;
+    font-size: 1.3em;
+}
+
+/************* Header Styles */
 header {
     background-color: #0A1085;
     text-align: center;
@@ -39,33 +60,12 @@ header a {
     text-decoration: none;
 }
 
-header p#site-title a,
-#site-header .object-item {
-    color: #F0E8E7;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.8em;
-}
-
-header p#site-slogan,
-#site-subheader .object-item, div#table-header {
-    font-family: 'Caveat', cursive;
-    color: #4BA0CA;
-    font-size: 1.3em;
-}
-
 #site-header .object-item,
 #site-subheader .object-item {
     background-color: #0A1085;
 }
 
-header div.hcwrapper,
-nav ul,
-main,
-footer div {
-    max-width: 870px;
-    margin: 0 auto;
-}
-
+/************* Navigation Styles */
 nav,
 #nav-footer .object-item {
     background-color: #111215;
@@ -105,10 +105,158 @@ nav a:hover,
     background-color: #111215;
 }
 
+/************* Main and General Styles */
+header div.hcwrapper,
+nav ul,
+main,
+footer div {
+    max-width: 870px;
+    margin: 0 auto;
+}
+
 main {
     padding: 1.5em;
 }
 
+.box-shadow {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
+    box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
+}
+
+.dark-accent {
+    background-color: #111215;
+    color: #F0E8E7;
+}
+
+.dark-accent h2 {
+    color: #4BA0CA;
+}
+
+.light-accent {
+    background-color: #4BA0CA;
+    color: #111215;
+}
+
+.light-accent h2 {
+    color: #F0E8E7;
+}
+
+.white-accent {
+    background-color: #F0E8E7;
+    color: #6A6482;
+}
+
+.white-accent h2 {
+    color: #111215;
+}
+
+.main-color,
+.main-color h2 {
+    background-color: #0A1085;
+    color: #F0E8E7
+}
+
+.leaf-shape {
+    padding: 25px;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+/************* Site Purpose Main Content Styles */
+#planning-doc-wrapper {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "Name"
+        "URL"
+        "Logo"
+        "Purpose";
+}
+
+#planning-doc-wrapper section {
+    display: grid;
+    justify-items: center;
+}
+
+#site_name {
+    grid-area: Name;
+}
+
+#site_url {
+    grid-area: URL;
+    background-color:
+}
+
+#site_logo {
+    grid-area: Logo;
+}
+
+#site_purpose {
+    grid-area: Purpose;
+}
+
+a.goog_dom img, .persona-wrapper img {
+    max-width: 100%;
+}
+
+/************* Target Audience Main Content Styles */
+.persona-wrapper small {
+    display: block;
+    text-align: center;
+}
+ 
+#personas-wrapper {
+    display: grid;
+    gap: 25px;
+}
+
+#personas-wrapper section {
+    display: grid;
+    justify-items: center;
+}
+
+
+/************* Color Scheme Main Content Styles */
+#color-palette {
+    display: grid;
+}
+
+.color-block {
+    height: 10vh;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#light-shades .color-block {
+    background-color: #F0E8E7;
+    color: #111215;
+}
+
+#light-accent .color-block {
+    background-color: #4BA0CA;
+    color: #111215;
+}
+
+#main-color .color-block {
+    background-color: #0A1085;
+    color: #F0E8E7;
+}
+
+#dark-accent .color-block {
+    background-color: #6A6482;
+    color: #F0E8E7;
+}
+
+#dark-shades .color-block {
+    background-color: #111215;
+    color: #F0E8E7;
+}
+
+/************* Typography Main Content Styles */
 #table-header {
     display: none;
 }
@@ -161,6 +309,7 @@ main {
     gap: 10px;
 }
 
+/************* Footer Styles */
 footer {
     background-color: #111215;
     color: #F0E8E7;
@@ -170,42 +319,5 @@ footer {
 }
 
 footer a {
-    color: #F0E8E7;
-}
-
-.content-grid-wrapper {
-    display: grid;
-}
-
-.color-block {
-    height: 10vh;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px;
-}
-
-#light-shades .color-block {
-    background-color: #F0E8E7;
-    color: #111215;
-}
-
-#light-accent .color-block {
-    background-color: #4BA0CA;
-    color: #111215;
-}
-
-#main-color .color-block {
-    background-color: #0A1085;
-    color: #F0E8E7;
-}
-
-#dark-accent .color-block {
-    background-color: #6A6482;
-    color: #F0E8E7;
-}
-
-#dark-shades .color-block {
-    background-color: #111215;
     color: #F0E8E7;
 }

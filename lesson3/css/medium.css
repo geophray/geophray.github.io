@@ -1,4 +1,7 @@
+/* Styles applied to tablet=>larger screens. */
 @media only screen and (min-width: 640px) {
+
+    /************* Header Styles */
     header a {
         margin: 0 15px;
     }
@@ -12,6 +15,7 @@
         justify-content: center;
     }
 
+    /************* Nav Styles */
     nav ul {
         display: flex;
     }
@@ -20,6 +24,16 @@
         flex: 1 1 100%;
     }
 
+    /************* Home/Site Purpose Main Content Styles */
+    #planning-doc-wrapper {
+        grid-template-areas:
+            "Name URL URL"
+            "Logo URL URL"
+            "Purpose Purpose Purpose";
+            grid-template-columns: 1.25fr 1fr 1fr;
+    }
+
+    /************* Color Palette Main Content Styles */
     #color-palette {
         grid-template-columns: repeat(5, 1fr);
     }
@@ -31,6 +45,7 @@
         justify-content: flex-end;
     }
 
+    /************* Typography Main Content Styles */
     #typography {
         border-top: 0.25px solid #6A6482;
         border-left: 0.25px solid #6A6482;
