@@ -230,6 +230,10 @@ a.goog_dom img, .persona-wrapper img {
     padding: 10px;
 }
 
+.colortype {
+    font-size: 1.17em;
+}
+
 #light-shades .color-block {
     background-color: #F0E8E7;
     color: #111215;
