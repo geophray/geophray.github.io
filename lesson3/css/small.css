@@ -308,6 +308,18 @@ a.goog_dom img, .persona-wrapper img {
     gap: 10px;
 }
 
+.heading1 {
+    font-family: 'Oslwald', sans-serif;
+    font-size: 2em;
+    color: #0A1085;
+}
+
+.heading2 {
+    font-family: 'Oslwald', sans-serif;
+    font-size: 1.5em;
+    color: #6A6482;
+}
+
 /************* Footer Styles */
 footer {
     background-color: #111215;
