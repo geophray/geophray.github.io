@@ -1,0 +1,27 @@
+/* Styles applied to tablet=>larger screens. */
+@media only screen and (min-width: 640px) {
+
+    /************* Header Styles */
+    header a {
+        margin: 0 15px;
+    }
+
+    header #site-title a {
+        font-size: 2.2rem;
+    }
+    
+    header #site-slogan {
+        font-size: 1.3em;
+    }
+
+    .hcwrapper {
+        justify-content: center;
+    }
+
+    .placeholder {
+        background-color: #4BA0CA;
+        color: #F0E8E7;
+        border-style: dashed;
+    }
+
+}

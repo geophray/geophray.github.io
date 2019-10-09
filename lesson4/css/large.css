@@ -1,0 +1,22 @@
+/* Styles applied to large desktop screens. */
+@media only screen and (min-width: 870px) {
+
+    /************* Nav Styles */
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+        display: block;
+    }
+
+    .primary-nav li:first-child {
+        display: none;
+    }
+
+    .placeholder {
+        background-color: #6A6482;
+        border-style: double;
+    }
+}
