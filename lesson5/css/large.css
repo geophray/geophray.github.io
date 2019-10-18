@@ -1,0 +1,31 @@
+/* Styles applied to large desktop screens. */
+@media only screen and (min-width: 870px) {
+
+    /************* Nav Styles */
+    nav {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+        display: block;
+        border-top: none;
+    }
+
+    .primary-nav li:first-child {
+        display: none;
+    }
+    
+    /* Forecast Section */
+
+    /* Article Section */
+    #recent-articles img.featured {
+        width: 350px;
+    }
+    /* Contact Info Section */
+
+}

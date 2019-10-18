@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat&7cOswald&7cRoboto&display=swap');
+
+/* COLORS
+Light Shades:       #F0E8E7 (Soft Peach)
+Light Accent:       #4BA0CA (Shakespeare)
+Main Brand Color:   #0A1085 (Deep Koamaru)
+Dark Accent:        #6A6482 (Dolphin)
+Dark Shades:        #111215 (Woodsmoke)
+*/
+
+/************* Default Typography Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #4BA0CA;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    color: #0A1085;
+    text-align: center;
+}
+
+h2 {
+    color: #6A6482;
+}
+
+header #site-title a {
+    color: #F0E8E7;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+}
+
+header #site-title {
+    margin-bottom: 0.8em;
+}
+
+header #site-slogan {
+    font-family: 'Caveat', cursive;
+    color: #4BA0CA;
+    font-size: 0.8em;
+}
+
+/************* Aside/Notification Styles */
+#event_notices {
+    background-color: #4BA0CA;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#event_notices div {
+    text-align: center;
+    color: white;
+    font-family: 'Caveat';
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+/************* Header Styles */
+header {
+    background-color: #0A1085;
+    text-align: center;
+    padding: 5px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.hcwrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hcwrapper #title-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.hcwrapper a img {
+    max-width: 100%;
+}
+
+/************* Navigation Styles */
+nav {
+    background-color: #111215;
+    color: #f0E8E7;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul.menu-open li {
+    display: block;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #F0E8E7;
+}
+
+.primary-nav.menu-open li:first-child a span.open {
+    font-size: xx-large;
+}
+
+.primary-nav.menu-open li:first-child a span.open,
+.primary-nav li:first-child a span.closed {
+    display: inline;
+}
+
+.primary-nav.menu-open li:first-child a span.closed,
+.primary-nav li:first-child a span.open {
+    display: none;
+}
+
+nav ul li a {
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+/* Hamburger toggle */
+.navigation li:first-child {
+    display: block;
+}
+
+nav a:hover {
+    background-color: #4BA0CA;
+    color: #111215;
+}
+
+.active {
+    color: #4BA0CA;
+}
+
+/************* Main and General Styles */
+#event_notices div,
+header .hcwrapper,
+nav ul,
+main,
+footer div {
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 1.5em;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
+    box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
+}
+
+.dark-accent {
+    background-color: #111215;
+    color: #F0E8E7;
+}
+
+.dark-accent h2 {
+    color: #4BA0CA;
+}
+
+.light-accent {
+    background-color: #4BA0CA;
+    color: #111215;
+}
+
+.light-accent h2 {
+    color: #F0E8E7;
+}
+
+.white-accent {
+    background-color: #F0E8E7;
+    color: #6A6482;
+}
+
+.white-accent h2 {
+    color: #111215;
+}
+
+.main-color,
+.main-color h2 {
+    background-color: #0A1085;
+    color: #F0E8E7
+}
+
+.leaf-shape-right {
+    padding: 25px;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.leaf-shape-left {
+    padding: 25px;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+
+/************* Footer Styles */
+footer {
+    background-color: #111215;
+    color: #F0E8E7;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 25px;
+}
+
+footer a {
+    color: #F0E8E7;
+}
+
+/************* Temporary Styles */
+
+.content-block {
+    background-color: #c7c7c7;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+
+/************* Preston Page Styles */
+/* Hero Section */
+#hero {
+    padding: 0;
+    position: relative;
+}
+
+#hero img {
+    display: block;
+    max-width: 100%;
+}
+
+#weather_summary {
+    position: absolute;
+    left: 5vw;
+    top: 3vw;
+    background: radial-gradient(#eee, #4BA0CA);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    opacity: .8;
+}
+
+#weather_summary h2 {
+    color: #111215;
+    border-bottom: 2px solid rgba(0, 0, 0, .25);
+    padding-bottom: 5px;
+}
+
+p.measurement {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    column-gap: 10px;
+}
+
+.measurement .label {
+    text-align: right;
+    font-style: italic;
+}
+
+.measurement .value {
+    font-weight: 600;
+}
+
+/* Forecast Section */
+#forecast {
+    display: none;
+}
+
+/* Article Section */
+#recent-articles img.featured {
+    max-width: 100%;
+    width: 100%;
+    margin: 1em 0 0 0;
+    order: 2;
+}
+
+#recent-articles {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Contact Info Section */
+
+#map {
+    display: none;
+}
