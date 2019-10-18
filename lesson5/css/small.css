@@ -172,9 +172,13 @@ main {
 }
 
 .box-shadow {
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
-    box-shadow: 0px 2px 5px 0px rgba(106, 100, 130, 1);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .8);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .8);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.51);
 }
 
 .dark-accent {
@@ -191,7 +195,8 @@ main {
     color: #111215;
 }
 
-.light-accent h2 {
+.light-accent h2,
+.light-accent a {
     color: #F0E8E7;
 }
 
@@ -229,7 +234,6 @@ footer {
     color: #F0E8E7;
     text-align: center;
     padding: 2rem;
-    margin-top: 25px;
 }
 
 footer a {
@@ -239,13 +243,17 @@ footer a {
 /************* Temporary Styles */
 
 .content-block {
-    background-color: #c7c7c7;
-    margin-bottom: 1em;
+    margin-bottom: 0;
     padding: 1em;
 }
 
 
 /************* Preston Page Styles */
+/* aside Section */
+#event_notices {
+    display: none;
+}
+
 /* Hero Section */
 #hero {
     padding: 0;
@@ -294,6 +302,32 @@ p.measurement {
     display: none;
 }
 
+#forecast_wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-left: 1px solid rgba(255, 255, 255, .2);
+}
+
+.daily-forecast {
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    border-color: rgba(255, 255, 255, .2);
+}
+
+.day-of-week {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    background-color: #4BA0CA;
+    padding: .5em 0;
+}
+
+.weather {
+    padding: .5em 0;
+}
+
+.weather p {
+    margin: 0.25em 0;
+}
+
 /* Article Section */
 #recent-articles img.featured {
     max-width: 100%;
@@ -311,4 +345,12 @@ p.measurement {
 
 #map {
     display: none;
+}
+
+#contact {
+    margin-bottom: 0;
+}
+
+main {
+    padding-bottom: 0;
 }

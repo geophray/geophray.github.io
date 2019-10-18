@@ -19,13 +19,17 @@
     .primary-nav li:first-child {
         display: none;
     }
-    
+
     /* Forecast Section */
+    #forecast_wrapper {
+        margin: 0 50px;
+    }
 
     /* Article Section */
     #recent-articles img.featured {
         width: 350px;
     }
+
     /* Contact Info Section */
 
 }

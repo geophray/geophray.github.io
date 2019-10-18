@@ -9,7 +9,7 @@
     header #site-title a {
         font-size: 2.2rem;
     }
-    
+
     header #site-slogan {
         font-size: 1.3em;
     }
@@ -22,6 +22,7 @@
 
     #forecast {
         display: block;
+        text-align: center;
     }
 
     /* Article Section */
@@ -39,8 +40,9 @@
     #contact {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
-        gap: 8em;
+        gap: 5em;
     }
+
     #map {
         display: block;
     }

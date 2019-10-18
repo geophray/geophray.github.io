@@ -41,7 +41,7 @@
     </nav>
     <main>
         <h1>Preston Idaho</h1>
-        <div id="hero" class="content-block">
+        <section id="hero" class="content-block">
             <img src="images/preston-farm-country.jpg" alt="Overlooking some farm fields in lovely Preston, Idaho.">
             <section id="weather_summary" class="box-shadow">
                 <h2>Weather Summary</h2>
@@ -66,14 +66,47 @@
                     <span class="value">5 mph</span>
                 </p>
             </section>
-        </div>
-        <div id="forecast" class="content-block">
+        </section>
+        <section id="forecast" class="content-block dark-accent">
             <h2>5 Day Forecast</h2>
-        </div>
-        <article id="recent-articles" class="content-block">
-            <img class="box-shadow featured" src="images/happy-little-clouds.jpg"
+            <div id="forecast_wrapper">
+                <div class="daily-forecast">
+                    <div class="day-of-week">Tuesday</div>
+                    <div class="weather"><img src="images/sunny.png" alt="Sunny">
+                        <p>73 &deg;F</p>
+                    </div>
+                </div>
+                <div class="daily-forecast">
+                    <div class="day-of-week">Wednesday</div>
+                    <div class="weather"><img src="images/sunny.png" alt="Sunny">
+                        <p>70 &deg;F</p>
+                    </div>
+                </div>
+                <div class="daily-forecast">
+                    <div class="day-of-week">Thursday</div>
+                    <div class="weather"><img src="images/sunny.png" alt="Sunny">
+                        <p>71 &deg;F</p>
+                    </div>
+                </div>
+                <div class="daily-forecast">
+                    <div class="day-of-week">Friday</div>
+                    <div class="weather"><img src="images/sunny.png" alt="Sunny">
+                        <p>68 &deg;F</p>
+                    </div>
+                </div>
+                <div class="daily-forecast">
+                    <div class="day-of-week">Saturday</div>
+                    <div class="weather"><img src="images/sunny.png" alt="Sunny">
+                        <p>65 &deg;F</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article id="recent-articles" class="content-block light-accent">
+            <img class="featured box-shadow" src="images/happy-little-clouds.jpg"
                 alt="Some of Bob Ross' happy little clouds.">
-            <h2>We'll see some happy little clouds...</h2>
+            <h2 class="text-shadow">Let's make some happy little clouds...</h2>
+            <address rel="author">by Bob Ross</address>
             <p>Even the worst thing we can do here is good. That's a son of a gun of a cloud. Let's put some highlights
                 on these little trees. The sun wouldn't forget them. Learn when to stop. If we're gonna walk though the
                 woods, we need a little path.</p>
@@ -88,15 +121,32 @@
             </p>
             <p>You have to make those little noises or it won't work. It just happens - whether or not you worried about
                 it or tried to plan it. You've got to learn to fight the temptation to resist these things. Just let
-                them happen. Anyone can paint.</p>
+                them happen. Anyone can&hellip;<a href="#">continue to full article</a></p>
         </article>
-        <div id="contact" class="content-block">
+        <div id="contact" class="content-block white-accent">
             <div id="map">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1Njg21LmjzeveW8GTJZE0nYKQcAvnnQ2V&hl=en" width="100%" height="400px"></iframe>
+                <iframe class="box-shadow"
+                    src="https://www.google.com/maps/d/embed?mid=1Njg21LmjzeveW8GTJZE0nYKQcAvnnQ2V&hl=en?key=AIzaSyALoUUbUXqBFkN2fge34KOXZeGr8Gi5aIk"
+                    width="100%" height="400px"></iframe>
             </div>
-            <div id="contact-info">
-
-            </div>
+            <section id="contact-info">
+                <h2>Contact Us!</h2>
+                <h3>Southeast Idaho Weather HQ</h3>
+                <address>30 N 1st E<br />
+                    Preston, ID 83263</address>
+                <p>&phone; <a href="tel:1-208-867-5309">(208) 867-5309</a></p>
+                <p>&#9993; <a href="mailto:updates@southeastidahoweatherhq.com">updates@SEidahoweatherhq.com</a></p>
+                <p>
+                    <a href="#" class="social-link"><img src="images/iconfinder_Facebook_4539876.png"
+                            alt="Facebook"></a>
+                    <a href="#" class="social-link"><img src="images/iconfinder_Instagram_4539865.png"
+                            alt="Instagram"></a>
+                    <a href="#" class="social-link"><img src="images/iconfinder_Pinterest_4539869.png"
+                            alt="Pinterest"></a>
+                    <a href="#" class="social-link"><img src="images/iconfinder_Messenger_4539863.png"
+                            alt="Messenger"></a>
+                </p>
+            </section>
         </div>
     </main>
     <footer>
