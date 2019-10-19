@@ -301,23 +301,20 @@ p.measurement {
 #forecast_wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    border-left: 1px solid rgba(255, 255, 255, .2);
-}
-
-.daily-forecast {
-    border-style: solid;
-    border-width: 1px 1px 1px 0;
-    border-color: rgba(255, 255, 255, .2);
+    gap: 5px;
+    margin: 0 0 50px 0;
 }
 
 .day-of-week {
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
     background-color: #4BA0CA;
+    color: #F0E8E7;
     padding: .5em 0;
 }
 
 .weather {
     padding: .5em 0;
+    background-color: #F0E8E7;
+    color: #111215;
 }
 
 .weather p {
