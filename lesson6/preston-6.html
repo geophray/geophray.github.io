@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SE Idaho Weather HQ - Preston, Idaho</title>
+    <meta name="description"
+        content="A weather site to keep the residents of Preston Idaho apprised of the current and upcoming weather conditions.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <aside id="event_notices">
+        <div>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+    </aside>
+    <header>
+        <div class="hcwrapper">
+            <a class="logo" href="index.html"><img src="images/logo.png" alt="Southeast Idaho Weather HQ Logo"></a>
+            <div id="title-wrapper">
+                <div id="site-title"><a href="index.html">Southeast Idaho Weather HQ</a></div>
+                <div id="site-slogan">Accurate local forecasts for Southeast Idaho.</div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="primary-nav">
+            <li><a href="#" onclick="toggleMenu()"><span class="open">&#215;</span><span class="closed">&#9776;
+                        Menu</span></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Preston Idaho</h1>
+        <div id="hero" class="content-block">
+            <picture>
+                <source srcset="images/cit230_image_franklin_760px.jpg"
+                    media="(min-width: 421px) and (max-width: 760px)">
+                <source srcset="images/cit230_image_franklin_870px.jpg" media="(min-width: 761px)">
+                <img src="images/cit230_image_franklin_420px.jpg"
+                    alt="Overlooking some farm fields in lovely Preston, Idaho.">
+            </picture>
+            <section id="weather_summary" class="box-shadow">
+                <h2>Weather Summary</h2>
+                <p class="measurement">
+                    <span class="label">Currently:</span>
+                    <span class="value">Sunny</span>
+                </p>
+                <p class="measurement">
+                    <span class="label">High:</span>
+                    <span class="value"><span id="high_temp">51</span> &deg;F</span>
+                </p>
+                <p class="measurement">
+                    <span class="label">Wind Chill:</span>
+                    <span id="wind_chill" class="value"></span>
+                </p>
+                <p class="measurement">
+                    <span class="label">Humidity:</span>
+                    <span class="value">69%</span>
+                </p>
+                <p class="measurement">
+                    <span class="label">Wind Speed:</span>
+                    <span class="value"><span id="wind_speed">12</span> mph</span>
+                </p>
+            </section>
+        </div>
+        <section id="forecast" class="content-block dark-accent">
+            <h2>5 Day Forecast</h2>
+            <div id="forecast_wrapper">
+                <div class="daily-forecast">
+                    <div class="day-of-week">Tuesday</div>
+                    <div class="weather"><img src="images/sunny.png" alt="Sunny">
+                        <p>73 &deg;F</p>
+                    </div>
+                </div>
+                <div class="daily-forecast">
+                    <div class="day-of-week">Wednesday</div>
+                    <div class="weather"><img src="images/sunny.png" alt="Sunny">
+                        <p>70 &deg;F</p>
+                    </div>
+                </div>
+                <div class="daily-forecast">
+                    <div class="day-of-week">Thursday</div>
+                    <div class="weather"><img src="images/sunny.png" alt="Sunny">
+                        <p>71 &deg;F</p>
+                    </div>
+                </div>
+                <div class="daily-forecast">
+                    <div class="day-of-week">Friday</div>
+                    <div class="weather"><img src="images/sunny.png" alt="Sunny">
+                        <p>68 &deg;F</p>
+                    </div>
+                </div>
+                <div class="daily-forecast">
+                    <div class="day-of-week">Saturday</div>
+                    <div class="weather"><img src="images/sunny.png" alt="Sunny">
+                        <p>65 &deg;F</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article id="recent-articles" class="content-block light-accent">
+            <picture class="featured">
+                <img class="box-shadow" src="images/happy-little-clouds.jpg"
+                    alt="Some of Bob Ross' happy little clouds.">
+            </picture>
+            <h2 class="text-shadow">Let's make some happy little clouds...</h2>
+            <address rel="author">by Bob Ross</address>
+            <p>Even the worst thing we can do here is good. That's a son of a gun of a cloud. Let's put some highlights
+                on these little trees. The sun wouldn't forget them. Learn when to stop. If we're gonna walk though the
+                woods, we need a little path.</p>
+            <p>You can bend rivers. But when I get home, the only thing I have power over is the garbage. Every day I
+                learn. How do you make a round circle with a square knife? That's your challenge for the day. You don't
+                have to be crazy to do this but it does help.</p>
+            <p>Just a happy little shadow that lives in there. Work on one thing at a time. Don't get carried away - we
+                have plenty of time. I can't think of anything more rewarding than being able to express yourself to
+                others through painting.</p>
+            <p>Son of a gun. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian
+                blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Let the paint work.
+            </p>
+            <p>You have to make those little noises or it won't work. It just happens - whether or not you worried about
+                it or tried to plan it. You've got to learn to fight the temptation to resist these things. Just let
+                them happen. Anyone can&hellip;<a href="#">continue to full article</a></p>
+        </article>
+        <div id="contact" class="content-block white-accent">
+            <div id="map">
+                <iframe class="box-shadow"
+                    src="https://www.google.com/maps/d/embed?mid=1Njg21LmjzeveW8GTJZE0nYKQcAvnnQ2V&hl=en?key=AIzaSyALoUUbUXqBFkN2fge34KOXZeGr8Gi5aIk"></iframe>
+            </div>
+            <section id="contact-info">
+                <h2>Contact Us!</h2>
+                <h3>Southeast Idaho Weather HQ</h3>
+                <address>30 N 1st E<br />
+                    Preston, ID 83263</address>
+                <p>&phone; <a href="tel:1-208-867-5309">(208) 867-5309</a></p>
+                <p>&#9993; <a href="mailto:updates@southeastidahoweatherhq.com">updates@SEidahoweatherhq.com</a></p>
+                <p>
+                    <a href="#" class="social-link"><img src="images/iconfinder_Facebook_4539876.png"
+                            alt="Facebook"></a>
+                    <a href="#" class="social-link"><img src="images/iconfinder_Instagram_4539865.png"
+                            alt="Instagram"></a>
+                    <a href="#" class="social-link"><img src="images/iconfinder_Pinterest_4539869.png"
+                            alt="Pinterest"></a>
+                    <a href="#" class="social-link"><img src="images/iconfinder_Messenger_4539863.png"
+                            alt="Messenger"></a>
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            &copy; Southeast Idaho Weather HQ | Attributions | <a href="../index.html">Jeffrey S. Maughan</a>
+        </div>
+        <div id="todaysDate"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontloader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>
