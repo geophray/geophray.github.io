@@ -29,9 +29,3 @@ try {
 } catch (e) {
 	alert("Error with code or your browser does not support Locale.")
 }
-
-let mapSRC = document.getElementById("map_iframe").getAttribute("data-src");
-
-if (mapSRC) {
-	document.getElementById("map_iframe").setAttribute("src", mapSRC);
-}
