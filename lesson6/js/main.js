@@ -30,7 +30,7 @@ try {
 	alert("Error with code or your browser does not support Locale.")
 }
 
-let mapIframe = document.getElementById("map-iframe");
+let mapIframe = document.getElementById("map_iframe");
 let mapSrc = mapIframe.getAttribute('data-src');
 
 if (mapSRC) {
