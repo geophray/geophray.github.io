@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SE Idaho Weather HQ - Weather Photo Gallery</title>
+    <meta name="description" content="A gallery of different types of weather captured in photos with descriptions.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <aside id="event_notices">
+        <div>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+    </aside>
+    <header>
+        <div class="hcwrapper">
+            <a class="logo" href="index.html"><img src="images/logo.png" alt="Southeast Idaho Weather HQ Logo"></a>
+            <div id="title-wrapper">
+                <div id="site-title"><a href="index.html">Southeast Idaho Weather HQ</a></div>
+                <div id="site-slogan">Accurate local forecasts for Southeast Idaho.</div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="primary-nav">
+            <li><a href="#" onclick="toggleMenu()"><span class="open">&#215;</span><span class="closed">&#9776;
+                        Menu</span></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Weather Gallery</h1>
+        <div id="gallery_wrapper">
+            <figure>
+                <img src="images/conditions/loading.jpg" alt="Clear sunny day in the mountains." data-src="images/conditions/sunny.jpg">
+                <figcaption>A beautiful sunny day.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/conditions/loading.jpg" alt="Foggy conditions on a wintry morning." data-src="images/conditions/foggy.jpg">
+                <figcaption>A cold and foggy winter morning.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/conditions/loading.jpg" alt="Hot conditions in the desert." data-src="images/conditions/hot.jpg">
+                <figcaption>A hot, arid day in the desert.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/conditions/loading.jpg" alt="An aerial view of a hurricane from space." data-src="images/conditions/hurricane.jpg">
+                <figcaption>NASA's view of a hurricane from space.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/conditions/loading.jpg" alt="An electrifying image of lightning striking at night." data-src="images/conditions/lightning.jpg">
+                <figcaption>A fantastic display of lightning in the night sky.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/conditions/loading.jpg" alt="Raindrops hitting the sidewalk." data-src="images/conditions/rainy.jpg">
+                <figcaption>A cold rainy day in the city.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/conditions/loading.jpg" alt="A tornado touching down in the distance, somewhere in the country." data-src="images/conditions/tornado.jpg">
+                <figcaption>A tornado touching down in the country.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/conditions/loading.jpg" alt="Wind blowing across a wheat field." data-src="images/conditions/windy.jpg">
+                <figcaption>Windy conditions on the farm.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/conditions/loading.jpg" alt="A stormfront blowing in fast with a farmhouse in the foreground." data-src="images/conditions/stormfront.jpg">
+                <figcaption>A menacing stormfront rolling in without much warning.</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <div>
+            &copy; Southeast Idaho Weather HQ | Attributions | <a href="../index.html">Jeffrey S. Maughan</a>
+        </div>
+        <div id="todaysDate"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontloader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lazyload.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+/* COLORS
+Light Shades:       #F0E8E7 (Soft Peach)
+Light Accent:       #4BA0CA (Shakespeare)
+Main Brand Color:   #0A1085 (Deep Koamaru)
+Dark Accent:        #6A6482 (Dolphin)
+Dark Shades:        #111215 (Woodsmoke)
+*/
+
+/************* Default Typography Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #4BA0CA;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    color: #0A1085;
+    text-align: center;
+}
+
+h2 {
+    color: #6A6482;
+}
+
+header #site-title a {
+    color: #F0E8E7;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+}
+
+header #site-title {
+    margin-bottom: 0.8em;
+}
+
+header #site-slogan {
+    font-family: 'Caveat', cursive;
+    color: #4BA0CA;
+    font-size: 0.8em;
+}
+
+/************* Aside/Notification Styles */
+#event_notices {
+    background-color: #4BA0CA;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#event_notices div {
+    text-align: center;
+    color: white;
+    font-family: 'Caveat';
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+/************* Header Styles */
+header {
+    background-color: #0A1085;
+    text-align: center;
+    padding: 5px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.hcwrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hcwrapper #title-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.hcwrapper a img {
+    max-width: 100%;
+}
+
+/************* Navigation Styles */
+nav {
+    background-color: #111215;
+    color: #f0E8E7;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul.menu-open li {
+    display: block;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #F0E8E7;
+}
+
+.primary-nav.menu-open li:first-child a span.open {
+    font-size: xx-large;
+}
+
+.primary-nav.menu-open li:first-child a span.open,
+.primary-nav li:first-child a span.closed {
+    display: inline;
+}
+
+.primary-nav.menu-open li:first-child a span.closed,
+.primary-nav li:first-child a span.open {
+    display: none;
+}
+
+nav ul li a {
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+/* Hamburger toggle */
+.navigation li:first-child {
+    display: block;
+}
+
+nav a:hover {
+    background-color: #4BA0CA;
+    color: #111215;
+}
+
+.active {
+    color: #4BA0CA;
+}
+
+/************* Main and General Styles */
+#event_notices div,
+header .hcwrapper,
+nav ul,
+main,
+footer div {
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .8);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .8);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.51);
+}
+
+.dark-accent {
+    background-color: #111215;
+    color: #F0E8E7;
+}
+
+.dark-accent h2 {
+    color: #4BA0CA;
+}
+
+.light-accent {
+    background-color: #4BA0CA;
+    color: #111215;
+}
+
+.light-accent h2,
+.light-accent a {
+    color: #F0E8E7;
+}
+
+.white-accent {
+    background-color: #F0E8E7;
+    color: #6A6482;
+}
+
+.white-accent h2 {
+    color: #111215;
+}
+
+.main-color,
+.main-color h2 {
+    background-color: #0A1085;
+    color: #F0E8E7
+}
+
+.leaf-shape-right {
+    padding: 25px;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.leaf-shape-left {
+    padding: 25px;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+
+/************* Footer Styles */
+footer {
+    background-color: #111215;
+    color: #F0E8E7;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer a {
+    color: #F0E8E7;
+}
+
+/************* Temporary Styles */
+
+.content-block {
+    margin-bottom: 0;
+    padding: 1em;
+}
+
+
+/************* Preston Page Styles */
+/* aside Section */
+#event_notices {
+    display: none;
+}
+
+/* Hero Section */
+#hero {
+    padding: 0;
+    position: relative;
+}
+
+#hero img {
+    display: block;
+    width: 100%;
+}
+
+#weather_summary {
+    position: absolute;
+    left: 5vw;
+    top: 3vw;
+    background: radial-gradient(#eee, #4BA0CA);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    opacity: .8;
+}
+
+#weather_summary h2 {
+    color: #111215;
+    border-bottom: 2px solid rgba(0, 0, 0, .25);
+    padding-bottom: 5px;
+}
+
+p.measurement {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    column-gap: 10px;
+}
+
+.measurement .label {
+    text-align: right;
+    font-style: italic;
+}
+
+.measurement .value {
+    font-weight: 600;
+}
+
+/* Forecast Section */
+#forecast {
+    display: none;
+}
+
+#forecast_wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin: 0 0 50px 0;
+}
+
+.day-of-week {
+    background-color: #4BA0CA;
+    color: #F0E8E7;
+    padding: .5em 0;
+}
+
+.weather {
+    padding: .5em 0;
+    background-color: #F0E8E7;
+    color: #111215;
+}
+
+.weather p {
+    margin: 0.25em 0;
+}
+
+/* Article Section */
+#recent-articles .featured {
+    max-width: 100%;
+    width: 100%;
+    margin: 1em 0 0 0;
+    order: 2;
+}
+
+#recent-articles .featured img {
+    width: 100%;
+}
+
+#recent-articles {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Contact Info Section */
+
+#map {
+    display: none;
+}
+
+#contact {
+    margin-bottom: 0;
+}
+
+main {
+    padding-bottom: 0;
+}
+
+/************************************** Gallery Page CSS */
+
+#gallery_wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#gallery_wrapper figure {
+    max-width: 400px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+#gallery_wrapper img {
+    max-width: 100%;
+}
+
+#gallery_wrapper figcaption {
+    padding: 1em;
+    text-align: center;
+}
