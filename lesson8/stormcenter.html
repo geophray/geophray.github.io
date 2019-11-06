@@ -66,23 +66,21 @@
                 </label>
                 <label class="top">Storm Region:
                     <select name="storm-region" id="storm-region">
-                        <option value="">Please Select &#9662;</option>
+                        <option value="">Please Select...</option>
                         <option value="preston">Preston</option>
                         <option value="sugar-city">Sugar City</option>
                         <option value="fish-haven">Fish Haven</option>
                     </select>
                 </label>
-                <label>
-                    <div>Are you in danger?</div>
-                    <label class="sbs"><input type="radio" name="audience" value="yes"> Yes</label>
-                    <label class="sbs"><input type="radio" name="audience" value="maybe"> Maybe</label>
-                    <label class="sbs"><input type="radio" name="audience" value="no"> No</label>
-                </label>
+                <div>Are you in danger?</div>
+                <label class="sbs"><input type="radio" name="in-danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="in-danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="in-danger" value="no"> No</label>
             </fieldset>
             <fieldset>
                 <legend>Additional Details</legend>
                 <label class="top">Comments:
-                    <textarea name="comments" cols="30" rows="10"></textarea>
+                    <textarea name="comments" rows="10"></textarea>
                 </label>
             </fieldset>
             <input type="submit" value="Report Storm" class="submitBtn">
