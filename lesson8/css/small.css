@@ -381,16 +381,23 @@ main {
 
 form {
     padding: 2vw;
+    margin: 20px auto;
+    width: 90vw;
+    max-width: 350px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #0A1085;
+    border: 1px solid #6A6482;
     border-radius: 10px;
     padding: .5rem 2%;
 }
 form legend {
-    color: #0A1085;
+    color: #4BA0CA;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -408,7 +415,6 @@ form label.top input, form label.top select, form label.top textarea {
     padding: .75rem;
     color: #6A6482;
     width: 100%;
-    max-width: 20rem;
     background-color: #F0E8E7;
     box-sizing: border-box;
 }
@@ -433,9 +439,24 @@ form input.submitBtn {
 }
 
 form label.top input:required {
-    border-left: #990000 solid 6px;
+    border: #cc0000 dotted 2px;
 }
 
 form label.top input:required:valid {
-    border-left: #006600 solid 6px;
+    border: #003b00 solid 1px;
+    background-color: rgba(0,255,0,0.1);
+}
+
+select#storm-region {
+    -webkit-appearance: none;
+}
+
+span#ratingvalue {
+    color: #333;
+    font-weight: bold;
+    font-style: italic;
+}
+
+[type="checkbox"], [type="radio"] {
+    margin: 0 5px;
 }
