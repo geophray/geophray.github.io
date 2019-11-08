@@ -438,8 +438,9 @@ form input.submitBtn {
     box-sizing: border-box;
 }
 
-form label.top input:required {
+form label.top input:invalid {
     border: #cc0000 dotted 2px;
+    background-color: rgba(255,0,0,0.1);
 }
 
 form label.top input:required:valid {
@@ -447,7 +448,7 @@ form label.top input:required:valid {
     background-color: rgba(0,255,0,0.1);
 }
 
-select#storm-region {
+select#storm-region, input[type="date"] {
     -webkit-appearance: none;
 }
 
@@ -459,4 +460,8 @@ span#ratingvalue {
 
 [type="checkbox"], [type="radio"] {
     margin: 0 5px;
+}
+
+#storm-submission-success p {
+    text-align: center;
 }
