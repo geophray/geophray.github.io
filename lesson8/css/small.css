@@ -434,7 +434,6 @@ form input.submitBtn {
     padding: .75rem 1.5rem;
     margin: 2rem 0;
     width: 100%;
-    max-width: 20rem;
     box-sizing: border-box;
 }
 
