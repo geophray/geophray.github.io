@@ -57,4 +57,21 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    /************************************** Home Page CSS */
+    #town-cards {
+        grid-template-columns: 1fr;
+    }
+
+    #town-cards .town-wrapper {
+        flex-flow: row nowrap;
+    }
+
+    #town-cards .town-wrapper:nth-child(even) {
+        flex-flow: row-reverse nowrap;
+    }
+
+    .town-wrapper img {
+        max-width: 50%;
+    }
+
 }

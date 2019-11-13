@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SE Idaho Weather HQ - Storm Center</title>
-    <meta name="description" content="A page where site users can submit information regarding storm conditions.">
+    <title>SE Idaho Weather HQ</title>
+    <meta name="description"
+        content="A weather site to keep the residents of Southeast Idaho apprised of the current and upcoming weather conditions.">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -21,7 +22,7 @@
         <div class="hcwrapper">
             <a class="logo" href="index.html"><img src="images/logo.png" alt="Southeast Idaho Weather HQ Logo"></a>
             <div id="title-wrapper">
-                <div id="site-title"><a href="index.html">Southeast Idaho Weather HQ</a></div>
+                <h1 id="site-title"><a href="index.html">Southeast Idaho Weather HQ</a></h1>
                 <div id="site-slogan">Accurate local forecasts for Southeast Idaho.</div>
             </div>
         </div>
@@ -30,56 +31,37 @@
         <ul class="primary-nav">
             <li><a href="#" onclick="toggleMenu()"><span class="open">&#215;</span><span class="closed">&#9776;
                         Menu</span></a></li>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    <main>
-        <h1>Storm Center</h1>
-        <form action="thanks.html">
-            <label class="top">Name: <input type="text" name="full-name" required pattern="[a-zA-Z\s]{5,}"></label>
-            <label class="top">Email: <input type="email" name="email" placeholder="you@email.com"></label>
-            <label class="top">Phone: <input type="tel" name="phone" required></label>
-            <label class="top">Zip Code: <input type="number" name="zipcode" pattern="^[0-9]{5}(?:-[0-9]{4})?$" required></label>
+    <main class="homepage">
 
-            <label class="top">Storm Date: <input type="date" name="storm-date"></label>
-            <label class="top">Storm Type: <input name="storm-type" id="storm-type" list="stormtypelist">
-                <datalist id="stormtypelist">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                </datalist>
-            </label>
-            <label class="top">Storm Severity: <span id="ratingvalue">5</span><input type="range" name="storm-severity"
-                    id="storm-severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"
-                    onchange="adjustRating(this.value)">
-            </label>
-            <label class="top">Storm Region:
-                <select name="storm-region" id="storm-region">
-                    <option disabled selected="true">Select Region...</option>
-                    <option value="fish-haven">Fish Haven</option>
-                    <option value="preston">Preston</option>
-                    <option value="soda-springs">Soda Springs</option>
-                </select>
-            </label>
-
-            <fieldset>
-                <legend>Are you in danger?</legend>
-                <label class="sbs"><input type="radio" name="in-danger" value="yes"> Yes</label>
-                <label class="sbs"><input type="radio" name="in-danger" value="maybe"> Maybe</label>
-                <label class="sbs"><input type="radio" name="in-danger" value="no"> No</label>
-            </fieldset>
-            <label class="top">Additional Comments:
-                <textarea name="comments" rows="10"></textarea>
-            </label>
-            <input type="submit" value="Report Storm" class="submitBtn">
-        </form>
+        <article class="dark-accent">
+            <picture id="homepage-banner" class="grayscale-until-hover">
+                <source srcset="images/homepage-banner_760px.jpg" media="(min-width: 421px) and (max-width: 780px)">
+                <source srcset="images/homepage-banner_870px.jpg" media="(min-width: 781px)">
+                <img src="images/homepage-banner_420px.jpg"
+                    alt="Overlooking some farm fields in lovely Preston, Idaho.">
+            </picture>
+            <h2 id="banner-title" class="text-shadow">Come celebrate 100 years of fun!</h2>
+            <div class="article-content">
+                <p>Come join us at Bear Lake this weekend for a weekend you will never forget. There will be fun things
+                    to
+                    do for all ages! Hiking, biking, golfing, horseback riding, exploring the Minnetonka Caves, and
+                    don't
+                    forget to get yourself a world famous Bear Lake Raspberry shake at La Beau's! </p>
+                <a href="#">Read more...</a>
+            </div>
+        </article>
+        <section id="towns-section" class="light-accent">
+            <h2>Towns We Cover</h2>
+            <div id="town-cards"></div>
+        </section>
         <div id="contact" class="content-block white-accent">
             <div id="map">
                 <iframe id="map_iframe" class="box-shadow"
@@ -114,7 +96,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontloader.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/stormcenter.js"></script>
+    <script src="js/towndata.js"></script>
 </body>
 
 </html>

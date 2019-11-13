@@ -41,4 +41,17 @@
         box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
     }
 
+    /************************************** Home Page CSS */
+    #town-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #town-cards .town-wrapper {
+        display: block;
+    }
+
+    .town-wrapper img {
+        max-width: 100%;
+    }
+
 }
