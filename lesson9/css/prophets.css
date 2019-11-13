@@ -8,6 +8,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 10px;
     background-color: #679436;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1, h2 {
