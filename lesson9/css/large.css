@@ -42,6 +42,12 @@
     }
 
     /************************************** Home Page CSS */
+    h2#banner-title {
+        top: 175px;
+        left: 10px;
+    
+    }
+
     #town-cards {
         grid-template-columns: repeat(3, 1fr);
     }

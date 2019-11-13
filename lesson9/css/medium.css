@@ -58,6 +58,11 @@
     }
 
     /************************************** Home Page CSS */
+    h2#banner-title {
+        top: 15vw;
+    
+    }
+
     #town-cards {
         grid-template-columns: 1fr;
     }
