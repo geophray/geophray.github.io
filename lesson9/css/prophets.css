@@ -26,7 +26,12 @@ section {
 img {
     display: block;
     margin: 0 auto;
-    width: 60%;
+    width: 80vw;
+    max-width: 75%;
+    height: 80vw;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .cards, img {
