@@ -551,3 +551,15 @@ h2#banner-title {
     display: block;
     width: 100%;
 }
+
+#preston {
+    order: 1;
+}
+
+#soda_springs {
+    order: 2;
+}
+
+#fish_haven {
+    order: 3;
+}

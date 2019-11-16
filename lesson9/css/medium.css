@@ -71,7 +71,7 @@
         flex-flow: row nowrap;
     }
 
-    #town-cards .town-wrapper:nth-child(even) {
+    #town-cards #soda_springs {
         flex-flow: row-reverse nowrap;
     }
 

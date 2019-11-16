@@ -21,6 +21,7 @@ fetch(requestURL)
                 let townPhoto = document.createElement('img');
                 //Assign necessary class names to appropriate HTML elements.
                 newCard.className = 'town-wrapper white-accent box-shadow leaf-shape-right';
+                newCard.id = towndata[i].name.toLowerCase().replace(' ','_');
                 contentBlock.className = 'town-info';
                 townMotto.className = 'town-motto';
                 //Add content to appropriate HTML elements.
