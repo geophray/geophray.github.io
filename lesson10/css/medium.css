@@ -1,0 +1,82 @@
+/* Styles applied to tablet=>larger screens. */
+@media only screen and (min-width: 640px) {
+
+    /************* Header Styles */
+    header a {
+        margin: 0 15px;
+    }
+
+    header #site-title a {
+        font-size: 2.2rem;
+    }
+
+    header #site-slogan {
+        font-size: 1.3em;
+    }
+
+    .hcwrapper {
+        justify-content: center;
+    }
+
+    /* Forecast Section */
+
+    #forecast {
+        display: block;
+        text-align: center;
+    }
+
+    /* Article Section */
+    #recent-articles .featured {
+        float: right;
+        width: 250px;
+        margin: 0 0 1em 1em;
+    }
+
+    #recent-articles {
+        display: block;
+    }
+
+    /* Contact Info Section */
+    #contact {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 5em;
+    }
+
+    #map {
+        display: block;
+    }
+
+    #map iframe {
+        width: 100%;
+        height: 50vh;
+    }
+
+    /************************************** Gallery Page CSS */
+    #gallery_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /************************************** Home Page CSS */
+    h2#banner-title {
+        top: 15vw;
+    
+    }
+
+    #town-cards {
+        grid-template-columns: 1fr;
+    }
+
+    #town-cards .town-wrapper {
+        flex-flow: row nowrap;
+    }
+
+    #town-cards #soda_springs {
+        flex-flow: row-reverse nowrap;
+    }
+
+    .town-wrapper img {
+        max-width: 50%;
+    }
+
+}
