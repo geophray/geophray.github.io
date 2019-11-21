@@ -14,7 +14,7 @@ const windChillCalc = (t, s) => {
 fetch(currentWeatherDataURL)
     .then((response) => response.json())
     .then((currentWeatherObject) => {
-        console.log(currentWeatherObject);
+        //console.log(currentWeatherObject);
         let h = currentWeatherObject.main.temp_max;
         let l = currentWeatherObject.main.temp_min;
         let t = currentWeatherObject.main.temp;
