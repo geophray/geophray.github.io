@@ -1,5 +1,5 @@
-const currentWeatherDataURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=1baa862cedcf9f408f4fdb40df762b22";
-const forecastDataURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=1baa862cedcf9f408f4fdb40df762b22";
+const currentWeatherDataURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=1baa862cedcf9f408f4fdb40df762b22";
+const forecastDataURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=1baa862cedcf9f408f4fdb40df762b22";
 
 const windChillCalc = (t, s) => {
     let windChill = 'N/A';
