@@ -27,7 +27,7 @@ const windChillCalc = (t, s) => {
     let windChill = 'N/A';
     if (t <= 50 && s > 3.0) {
         windChill = 35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
-        return parseInt(windChill) + "&deg;F";
+        return Math.round(windChill) + "&deg;F";
     } else {
         return windChill;
     }
@@ -42,11 +42,11 @@ fetch(currentWeatherDataURL)
         let t = currentWeatherObject.main.temp;
         let s = currentWeatherObject.wind.speed;
         document.getElementById("weather_desc").innerText = currentWeatherObject.weather[0].main;
-        document.getElementById("high_low_temp").innerHTML = parseInt(h) + "&deg;F / " + parseInt(l) + "&deg;F";
-        document.getElementById("current_temp").innerHTML = parseInt(t) + "&deg;F";
+        document.getElementById("high_low_temp").innerHTML = Math.round(h) + "&deg;F / " + Math.round(l) + "&deg;F";
+        document.getElementById("current_temp").innerHTML = Math.round(t) + "&deg;F";
         document.getElementById("wind_chill").innerHTML = windChillCalc(t, s);
         document.getElementById("humidity").innerHTML = currentWeatherObject.main.humidity + "&percnt;";
-        document.getElementById("wind_speed").innerText = parseInt(s) + "mph";
+        document.getElementById("wind_speed").innerText = Math.round(s) + "mph";
     });
 
 fetch(forecastDataURL)
@@ -79,7 +79,7 @@ fetch(forecastDataURL)
                 weather.appendChild(weatherIcon);
                 //Create and append high/low to weather detail wrapper
                 let temp = document.createElement("p");
-                temp.innerHTML = parseInt(weatherForecastObject.list[i].main.temp) + "&deg;F";
+                temp.innerHTML = Math.round(weatherForecastObject.list[i].main.temp) + "&deg;F";
                 weather.appendChild(temp);
                 //Append weather info to day wrapper
                 newDay.appendChild(weather);
