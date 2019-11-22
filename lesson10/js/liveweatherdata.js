@@ -1,5 +1,24 @@
+const townIDs = [{
+    name: 'fish-haven',
+    id: '5585010'
+}, {
+    name: 'preston',
+    id: "5604473"
+}, {
+    name: 'soda-springs',
+    id: '5607916'
+}];
+function townIDLookup() {
+    const pathName = window.location.pathname;
+    for (i = 0; i < townIDs.length; i++) {
+        let townName = townIDs[i].name;
+        if (pathName.includes(townName)) {
+            return townIDs[i].id;
+        }
+    }
+}
+const townID = townIDLookup();
 const appID = "1baa862cedcf9f408f4fdb40df762b22";
-const townID = "5604473";
 const unit = "imperial";
 const currentWeatherDataURL = "https://api.openweathermap.org/data/2.5/weather?id=" + townID + "&units=" + unit + "&APPID=" + appID;
 const forecastDataURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + townID + "&units=" + unit + "&APPID=" + appID;
@@ -42,8 +61,10 @@ fetch(forecastDataURL)
                 newDay.className = "daily-forecast";
                 //Format and append Weekday
                 let fullDate = new Date(weatherForecastObject.list[i].dt_txt);
-                let dateOptions = {weekday: 'long'};
-                let weekDay = fullDate.toLocaleDateString("en-US",dateOptions);
+                let dateOptions = {
+                    weekday: 'long'
+                };
+                let weekDay = fullDate.toLocaleDateString("en-US", dateOptions);
                 let dayOfWeek = document.createElement("div");
                 dayOfWeek.className = "day-of-week";
                 dayOfWeek.innerText = weekDay;
