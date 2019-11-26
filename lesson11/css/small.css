@@ -361,9 +361,14 @@ p.measurement {
 }
 #upcoming_events h2 {
     grid-column: 1/-1;
+    text-align: center;
 }
 
-svg {
+.icon {
+    display: none;
+}
+
+.icon svg {
     max-width: 100%;
     fill: #4BA0CA;
 }

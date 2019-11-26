@@ -78,5 +78,12 @@
     .town-wrapper img {
         max-width: 50%;
     }
+    /************************************** Town Page CSS */
+    section#upcoming_events {
+        grid-template-columns: 1fr 1fr;
+    }
+    .icon {
+        display: block;
+    }
 
 }

@@ -62,7 +62,7 @@
 
     /************************************** Town Page CSS */
     section#upcoming_events {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
