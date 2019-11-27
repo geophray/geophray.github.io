@@ -1,10 +1,13 @@
-/* COLORS
-Light Shades:       #F0E8E7 (Soft Peach)
-Light Accent:       #4BA0CA (Shakespeare)
-Main Brand Color:   #0A1085 (Deep Koamaru)
-Dark Accent:        #6A6482 (Dolphin)
-Dark Shades:        #111215 (Woodsmoke)
-*/
+/* COLORS */
+:root{
+    --light-shades: #F0E8E7;  
+    --light-accent: #8DAA9D;    
+    --main-color: #F9A03F;  
+    --dark-accent: #353A47; 
+    --dark-shades: #111215;  
+}
+
+
 
 /************* Default Typography Styles */
 body {
@@ -12,7 +15,7 @@ body {
 }
 
 a {
-    color: #4BA0CA;
+    color: var(--dark-accent);
 }
 
 h1,
@@ -25,16 +28,16 @@ h6 {
 }
 
 h1 {
-    color: #0A1085;
+    color: var(--dark-accent);
     text-align: center;
 }
 
 h2 {
-    color: #6A6482;
+    color: var(--dark-shades);
 }
 
 header #site-title a {
-    color: #F0E8E7;
+    color: var(--light-shades);
     font-family: 'Oswald', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
@@ -47,19 +50,19 @@ header #site-title {
 
 header #site-slogan {
     font-family: 'Caveat', cursive;
-    color: #4BA0CA;
+    color: var(--main-color);
     font-size: 0.8em;
 }
 
 /************* Aside/Notification Styles */
 #event_notices {
-    background-color: #4BA0CA;
+    background-color: var(--light-accent);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 #event_notices div {
     text-align: center;
-    color: white;
+    color: var(--light-shades);
     font-family: 'Caveat';
     font-size: 1.5rem;
     padding: 5px;
@@ -67,7 +70,7 @@ header #site-slogan {
 
 /************* Header Styles */
 header {
-    background-color: #0A1085;
+    background-color: var(--dark-accent);
     text-align: center;
     padding: 5px;
 }
@@ -94,8 +97,8 @@ header a {
 
 /************* Navigation Styles */
 nav {
-    background-color: #111215;
-    color: #f0E8E7;
+    background-color: var(--dark-shades);
+    color: var(--light-shades);
     text-align: center;
 }
 
@@ -120,7 +123,7 @@ nav ul.menu-open li {
 
 nav ul li a {
     text-decoration: none;
-    color: #F0E8E7;
+    color: var(--light-shades);
 }
 
 .primary-nav.menu-open li:first-child a span.open {
@@ -149,12 +152,12 @@ nav ul li a {
 }
 
 nav a:hover {
-    background-color: #4BA0CA;
-    color: #111215;
+    background-color: var(--light-accent);
+    color: var(--dark-shades);
 }
 
 .active {
-    color: #4BA0CA;
+    color: var(--light-accent);
 }
 
 /************* Main and General Styles */
@@ -178,37 +181,37 @@ footer div {
 }
 
 .dark-accent {
-    background-color: #111215;
-    color: #F0E8E7;
+    background-color: var(--dark-shades);
+    color: var(--light-shades);
 }
 
-.dark-accent h2 {
-    color: #4BA0CA;
+.dark-accent h2, .dark-accent a {
+    color: var(--main-color);
 }
 
 .light-accent {
-    background-color: #4BA0CA;
-    color: #111215;
+    background-color: var(--main-color);
+    color: var(--dark-shades);
 }
 
 .light-accent h2,
 .light-accent a {
-    color: #F0E8E7;
+    color: var(--dark-accent);
 }
 
 .white-accent {
-    background-color: #F0E8E7;
-    color: #6A6482;
+    background-color: var(--light-shades);
+    color: var(--dark-accent);
 }
 
-.white-accent h2 {
-    color: #111215;
+.white-accent h2, .white-accent a {
+    color: var(--dark-shades);
 }
 
 .main-color,
 .main-color h2 {
-    background-color: #0A1085;
-    color: #F0E8E7
+    background-color: var(--dark-accent);
+    color: var(--light-shades);
 }
 
 .leaf-shape-right {
@@ -239,14 +242,14 @@ footer div {
 
 /************* Footer Styles */
 footer {
-    background-color: #111215;
-    color: #F0E8E7;
+    background-color: var(--dark-shades);
+    color: var(--light-shades);
     text-align: center;
     padding: 2rem;
 }
 
 footer a {
-    color: #F0E8E7;
+    color: var(--light-shades);
 }
 
 /************* Temporary Styles */
@@ -280,14 +283,14 @@ footer a {
     position: absolute;
     left: 5vw;
     top: 3vw;
-    background: radial-gradient(#eee, #4BA0CA);
+    background: radial-gradient(var(--light-shades), var(--light-accent));
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 1rem;
     opacity: .8;
 }
 
 #weather_summary h2 {
-    color: #111215;
+    color: var(--dark-shades);
     border-bottom: 2px solid rgba(0, 0, 0, .25);
     padding-bottom: 5px;
 }
@@ -321,15 +324,15 @@ p.measurement {
 }
 
 .day-of-week {
-    background-color: #4BA0CA;
-    color: #F0E8E7;
+    background-color: var(--light-accent);
+    color: var(--dark-accent);
     padding: .5em 0;
 }
 
 .weather {
     padding: .5em 0;
-    background-color: #F0E8E7;
-    color: #111215;
+    background-color: var(--light-shades);
+    color: var(--dark-shades);
 }
 
 .weather p {
@@ -370,7 +373,7 @@ p.measurement {
 
 .icon svg {
     max-width: 100%;
-    fill: #4BA0CA;
+    fill: var(--light-accent);
 }
 
 #upcoming_event_list {
@@ -435,13 +438,13 @@ form {
 
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #6A6482;
+    border: 1px solid var(--dark-accent);
     border-radius: 10px;
     padding: .5rem 2%;
 }
 
 form legend {
-    color: #4BA0CA;
+    color: var(--dark-accent);
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -450,7 +453,7 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: #4BA0CA;
+    color: var(--dark-accent);
     font-size: .8rem;
 }
 
@@ -459,25 +462,25 @@ form label.top select,
 form label.top textarea {
     display: block;
     font-size: 1rem;
-    border: solid 1px #6A6482;
+    border: solid 1px var(--dark-accent);
     border-radius: 4px;
     padding: .75rem;
-    color: #6A6482;
+    color: var(--dark-accent);
     width: 100%;
-    background-color: #F0E8E7;
+    background-color: var(--light-shades);
     box-sizing: border-box;
 }
 
 form label.sbs {
     display: block;
     padding: 0.75rem 0;
-    color: #6A6482;
+    color: var(--dark-accent);
 }
 
 form input.submitBtn {
     display: block;
     border: none;
-    background-color: #0A1085;
+    background-color: var(--dark-accent);
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -502,7 +505,7 @@ input[type="date"] {
 }
 
 span#ratingvalue {
-    color: #333;
+    color: var(--dark-accent);
     font-weight: bold;
     font-style: italic;
 }
@@ -545,12 +548,16 @@ h2#banner-title {
 
 #town-cards h3 {
     font-size: 1.5em;
-    color: #0A1085;
-    text-shadow: 1px 1px 1px #6A6482;
+    color: var(--dark-accent);
+    text-shadow: 1px 1px 1px var(--dark-accent);
+}
+
+#town-cards a {
+    text-decoration: none;
 }
 
 .town-motto {
-    color: #4BA0CA;
+    color: var(--dark-accent);
 }
 
 #town-cards {
